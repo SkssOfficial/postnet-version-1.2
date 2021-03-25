@@ -179,7 +179,7 @@ function countMovement() {
         let rightHip = pose.rightHip
         switch (String(stage)) {
             case '0':
-                if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset && rightHip.y - rightKnee.y > 30 || leftHip.y - leftKnee.y > 30) {
+                if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset && rightHip.y - rightKnee.y > 20 || leftHip.y - leftKnee.y > 20) {
                     break;
                 }
                 
