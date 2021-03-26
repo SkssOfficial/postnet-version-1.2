@@ -174,7 +174,7 @@ function countMovement() {
         let rightWrist = pose.rightWrist;
         let rightElbow = pose.rightElbow;
         let rightShoulder = pose.rightShoulder;
-        let leftShoulder = pose.rightShoulder;
+        let leftShoulder = pose.leftShoulder;
         let leftHip = pose.leftHip;
         let rightHip = pose.rightHip;
         switch (String(stage)) {
