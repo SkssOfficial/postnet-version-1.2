@@ -173,10 +173,10 @@ function countMovement() {
         let leftElbow = pose.leftElbow;
         let rightWrist = pose.rightWrist;
         let rightElbow = pose.rightElbow;
-        let rightShoulder = pose.rightShoulder
-        let leftShoulder = pose.rightShoulder
-        let leftHip = pose.leftHip
-        let rightHip = pose.rightHip
+        let rightShoulder = pose.rightShoulder;
+        let leftShoulder = pose.rightShoulder;
+        let leftHip = pose.leftHip;
+        let rightHip = pose.rightHip;
         switch (String(stage)) {
             case '0':
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
