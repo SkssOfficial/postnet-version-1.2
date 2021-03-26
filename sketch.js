@@ -13,7 +13,7 @@ let poseNet;
 let poses = [];
 let stage = 0;
 let stageResult = [0, 0]
-let poseOffset = 300
+let poseOffset = 700
 let confidenceOffset = 0.7
 let stopCounting = false
 
