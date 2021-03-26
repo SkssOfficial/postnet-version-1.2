@@ -185,9 +185,9 @@ function countMovement() {
                 
                
                 
-                if (rightKnee.y > leftKnee.y + poseOffset && rightKnee.y - leftKnee.y > 50) {
+                if (rightKnee.y > leftKnee.y + poseOffset && rightKnee.y - leftKnee.y > 1000) {
                     stageResult[0] += 1
-                } else if (leftKnee.y > rightKnee.y + poseOffset && leftKnee.y - rightKnee.y > 50) {
+                } else if (leftKnee.y > rightKnee.y + poseOffset && leftKnee.y - rightKnee.y > 1000) {
                     stageResult[1] += 1
                 }
             case '1':
