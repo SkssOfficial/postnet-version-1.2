@@ -185,9 +185,9 @@ function countMovement() {
                 
                
                 
-                if (rightKnee.y > leftKnee.y + poseOffset && rightKnee.y - leftKnee.y > 300) {
+                if (rightKnee.y > leftKnee.y + poseOffset && rightKnee.y - leftKnee.y > 700) {
                     stageResult[0] += 1
-                } else if (leftKnee.y > rightKnee.y + poseOffset && leftKnee.y - rightKnee.y > 300) {
+                } else if (leftKnee.y > rightKnee.y + poseOffset && leftKnee.y - rightKnee.y > 700) {
                     stageResult[1] += 1
                 }
             case '1':
@@ -197,9 +197,9 @@ function countMovement() {
                 
                
                 
-                if (leftKnee.y > rightKnee.y + poseOffset || rightElbow.y + poseOffset> rightWrist.y && leftElbow.y + poseOffset> leftWrist.y) {
+                if (leftKnee.y - rightKnee.y > 700 && leftKnee.y > rightKnee.y + poseOffset || rightElbow.y + poseOffset> rightWrist.y && leftElbow.y + poseOffset> leftWrist.y) {
                     stageResult[0] += 1
-                } else if (rightKnee.y > leftKnee.y + poseOffset || rightElbow.y + poseOffset> rightWrist.y && leftElbow.y + poseOffset> leftWrist.y) {
+                } else if (rightKnee.y - leftKnee.y > 700 && rightKnee.y > leftKnee.y + poseOffset || rightElbow.y + poseOffset> rightWrist.y && leftElbow.y + poseOffset> leftWrist.y) {
                     stageResult[1] += 1
                 }
                                 
