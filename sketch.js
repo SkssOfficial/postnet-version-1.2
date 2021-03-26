@@ -13,12 +13,12 @@ let poseNet;
 let poses = [];
 let stage = 0;
 let stageResult = [0, 0]
-let poseOffset = 700
+let poseOffset = 1000
 let confidenceOffset = 0.7
 let stopCounting = false
 
 let currentFrame = 0
-let delayFrame = 45
+let delayFrame = 40
 
 let page = 0;
 
