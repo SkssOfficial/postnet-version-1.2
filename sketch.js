@@ -33,6 +33,8 @@ let waitTimeFuncVar;
 let nextStageTime = 45;
 let nextStageTimeVar;
 
+var audio1 = new Audio('./assets/vl4.m4a');
+
 
 // function preload() {
 //   imgLogo = loadImage('assets/logo.png');
@@ -45,6 +47,7 @@ function setUpStepDetail() {
     switch (String(stage)) {
         case '0':
             stepDetail.innerHTML = "先提起右腿，然後放下；再提起左腿，然後放下，共提腿8次"
+            audio1.play();
             break;
         case '1':
             stepDetail.innerHTML = "重複第1組動作，先提起右腿，然後放下；再提起左腿，然後放下；每次提腿時，雙手同時推向前面上方，共8次。"
