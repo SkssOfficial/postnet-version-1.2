@@ -66,11 +66,13 @@
 
             var video = document.getElementById('demoVideo');
             var demoVideoPlayer = document.createElement('source');
+            var audio1 = new Audio('./assets/vl3.m4a');
 
             // source.setAttribute('src', 'http://www.tools4movies.com/trailers/1012/Kill%20Bill%20Vol.3.mp4');
 
             switch (String(step)) {
                 case '0':
+                    audio1.play();
                     demoVideoPlayer.setAttribute("src", "./assets/fitness_exercise_action1.mp4");               
                     break;
                 case '1':
