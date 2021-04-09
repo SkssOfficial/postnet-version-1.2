@@ -1,4 +1,7 @@
 /* loading */
+.customFontSizeXLarge {
+    font-size: 300 !important;
+}
 
 .customFontSizeLarge {
     font-size: 100 !important;
