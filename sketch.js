@@ -65,7 +65,7 @@ function setup() {
     // console.log(step)
     if (stage == null) {
         //return home
-        window.location.href = "./start.html";
+        window.location.href = "./home.html";
         return
     }
 
