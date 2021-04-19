@@ -143,7 +143,7 @@ function draw() {
                 stopCounting = false;
             }
         }
-        textSize(60);
+        textSize(60)
         textAlign(LEFT, TOP);
         // fill(255, 0, 0);
         text("Stage: " + String(parseInt(stage) + 1), 40, 10);
@@ -180,6 +180,8 @@ function countMovement() {
         let leftShoulder = pose.leftShoulder;
         let leftHip = pose.leftHip;
         let rightHip = pose.rightHip;
+        let rightEye = pose.rightEye
+        let leftEye = pose.leftEye
         switch (String(stage)) {
             case '0':
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
@@ -193,6 +195,31 @@ function countMovement() {
                 } else if (leftKnee.y > rightKnee.y + poseOffset && leftKnee.y - rightKnee.y > 700) {
                     stageResult[1] += 1
                 }
+                
+                case '11':
+                if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
+                    break;
+                }
+               
+                
+                if (rightShoulder.y > rightWrist.y && leftShoulder.y > leftWrist.y + poseOffset) {
+                    stageResult[0] += 1
+                } else if (rightWrist.y > rightEye.y + poseOffset && leftWrist.y > leftEye.y  + poseOffset) {
+                    stageResult[1] += 1
+                }
+                
+                  case '12':
+                if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
+                    break;
+                }
+               
+                
+                if (leftWrist.x - rightShoulder.x >700 && rightWrist.x - leftShoulder.x >700) {
+                    stageResult[0] += 1
+                } else if (rightWrist.y > rightEye.y + poseOffset && leftWrist.y > leftEye.y  + poseOffset) {
+                    stageResult[1] += 1
+                }
+                
             case '1':
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset ) {
                     break;
