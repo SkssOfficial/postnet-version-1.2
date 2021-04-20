@@ -143,13 +143,13 @@ function draw() {
                 stopCounting = false;
             }
         }
-        textSize(60)
+        textSize(80)
         textAlign(LEFT, TOP);
         // fill(255, 0, 0);
-        text("Stage: " + String(parseInt(stage) + 1), 40, 10);
-        text("Count: " + stageResult[0] + ", " + stageResult[1], 40, 70);
-        text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8', 40, 130);
-        text("Time Left: " + nextStageTime, 40, 190)
+        text("Stage: " + String(parseInt(stage) + 1), 80, 80);
+        text("Count: " + stageResult[0] + ", " + stageResult[1], 80, 160);
+        text("Mark: " + Math.max(stageResult[0], stageResult[1]) + '/8',80, 240);
+        text("Time Left: " + nextStageTime, 80, 320)
         
         
         /*text("Count: " + stageResult[0] + ", " + stageResult[1], 25, 30);
