@@ -195,7 +195,7 @@ function countMovement() {
                 } else if (leftKnee.y > rightKnee.y + poseOffset && leftKnee.y - rightKnee.y > 700) {
                     stageResult[1] += 1
                 }
-                
+                 break;
                 case '11':
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
                     break;
@@ -207,7 +207,7 @@ function countMovement() {
                 } else if (rightWrist.y > rightEye.y + poseOffset && leftWrist.y > leftEye.y  + poseOffset) {
                     stageResult[1] += 1
                 }
-                
+                 break;
                   case '12':
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset) {
                     break;
@@ -219,7 +219,7 @@ function countMovement() {
                 } else if (rightWrist.y > rightEye.y + poseOffset && leftWrist.y > leftEye.y  + poseOffset) {
                     stageResult[1] += 1
                 }
-                
+                 break;
             case '1':
                 if (leftKnee.confidence < confidenceOffset || rightKnee.confidence < confidenceOffset ) {
                     break;
