@@ -30,7 +30,7 @@ let radio = 640 / 480
 let waitTime = 5;
 let waitTimeFuncVar;
 
-let nextStageTime = 45;
+let nextStageTime = 70;
 let nextStageTimeVar;
 
 var audio1 = new Audio('./assets/vl4.m4a');
